@@ -154,7 +154,7 @@ function checkAnswer(event) {
     renderScore();
     showAlert(
       "alert alert-success text-center",
-      "Nice job!",
+      "Perfect",
       quizEl,
       scoreContainerEl
     );
@@ -163,7 +163,7 @@ function checkAnswer(event) {
     if (seconds > 0) {
       showAlert(
         "alert alert-primary text-center",
-        "Incorrect. 10 second penalty incurred.",
+        "10 second penalty",
         quizEl,
         scoreContainerEl
       );
