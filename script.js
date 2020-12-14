@@ -1,3 +1,30 @@
+var timerEl = document.getElementById("timer");
+
+function runTimer() {
+ 
+  timerEl.textContent = seconds;
+
+  if (seconds > 0) {
+    interval = setInterval(function() {
+      if (seconds === 0) {
+        quizOver();
+      } else {
+        seconds--;
+        timerEl.textContent = seconds;
+      }
+    }, 1000);
+  } 
+ 
+  else {
+    quizOver();
+  }
+}
+
+function stopTimer() {
+  clearInterval(interval);
+}
+
+/* 
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
@@ -26,4 +53,4 @@ function sendMessage() {
 
 }
 
-setTime();
+setTime(); */

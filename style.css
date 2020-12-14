@@ -1,0 +1,8 @@
+body {
+    background-image: url("./Assets/background2.jpg");
+    background-size: cover;
+    height: 100%;
+    padding-top: 80px; 
+    padding-bottom: 80px;
+    
+  }
