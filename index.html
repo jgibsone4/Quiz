@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main> <!-- class="p-1 p-md-5"> -->
- <div class="container d-flex justify-content-center my-3"> 
-        <div class="container p-4 bg-light rounded">
+    <main class="p-5 p-md-6">
+      <div class="container d-flex justify-content-center my-3">
+        <div class="container p-4 bg-light rounded">     
           <section id="main-page" class="d-block text-center">
             <h1>Angora Rabbit Quiz</h1>
             <hr class="w-75 my-4" />
@@ -55,14 +55,14 @@
               >
             </p>
           </section>
-      
+
           <section id="quiz-section" class="d-none">
-                    <div>
+            <div>
               <p class="text-center text-primary font-weight-bold">
                 Time Remaining:
                 <span id="timer" class="text-light bg-primary p-1">00</span>
               </p>
-            </div>           
+            </div>
             <h3 id="question" class="text-center font-weight-bold"></h3>
             <hr class="my-4" />
             <div id="answer-container" class="text-center"></div>
@@ -79,12 +79,12 @@
             </div>
           </section>
 
-       <!--  Final -->
+          <!--  Final -->
           <section id="high-score" class="d-none text-center">
             <!-- Display Final Score -->
             <h3>Score: <span id="final-score" class="text-primary"></span></h3>
             <p class="lead mb-3">
-             Enter your initials for the leaderboard
+              Enter your initials for the leaderboard
             </p>
             <hr class="my-4" />
             <form id="form" class="d-block">
@@ -95,7 +95,7 @@
                     <input type="text" class="form-control" id="initials" />
                   </div>
                   <button type="submit" id="post-score" class="btn btn-primary">
-                   Enter
+                    Enter
                   </button>
                 </div>
               </div>
