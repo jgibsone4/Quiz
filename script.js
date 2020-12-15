@@ -23,6 +23,7 @@ var penalty = 10;
 var interval;
 var users = [];
 
+// Questions/Answer Key
 var quizData = [
   {
     question:
@@ -51,7 +52,7 @@ var quizData = [
     correctIndex: 1,
   },
 ];
-
+//End Q/A
 function renderQuestion(quizData) {
   answersEl.innerHTML = "";
   var question = quizData[index].question;
@@ -106,7 +107,7 @@ function renderLeaderboard(user, percentScore) {
   li.appendChild(badge);
   highScoresEl.prepend(li);
 }
-
+//localstorage
 function renderHighScores() {
   // Check for users already in local storage
   if (localStorage.getItem("users") === null) {
@@ -172,7 +173,7 @@ function checkAnswer(event) {
     }
   }
 }
-
+//timer
 function runTimer() {
   timerEl.textContent = seconds;
   if (seconds > 0) {
@@ -192,6 +193,8 @@ function runTimer() {
 function stopTimer() {
   clearInterval(interval);
 }
+//end timer
+//quiz
 function startQuiz() {
   toggleSection(landingPageEl, quizEl);
   clearAlert();
@@ -223,7 +226,7 @@ function toggleSection(prev, next) {
   prev.classList.replace("d-block", "d-none");
   next.classList.replace("d-none", "d-block");
 }
-
+//event listeners
 document.addEventListener("DOMContentLoaded", renderHighScores);
 startBtnEl.addEventListener("click", startQuiz);
 answersEl.addEventListener("click", submitAnswer);
